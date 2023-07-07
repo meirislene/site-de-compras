@@ -27,8 +27,8 @@ function prevSlide(){
    showSlide(currentIndex);
    }
 
-   document.querySelector('.carousel-control-prev').addEventListener('click,prevSlide');
-   document.querySelector('.carousel-control-next').addEventListener('click,nextSlide');
+   document.querySelector('.carousel-control-prev').addEventListener('click',prevSlide);
+   document.querySelector('.carousel-control-next').addEventListener('click',nextSlide);
 
    //exibe o primeiro slide ao carregara pagina
    showSlide(currentIndex);
