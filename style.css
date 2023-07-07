@@ -36,3 +36,39 @@ ul{
     overflow: hidden;
     
 }
+
+.carrossel{
+    display: block;
+    /*position:relative,*/
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    /* parar de sobrepor a imagem*/
+}
+
+.carrossel li {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    /*top:0; /* adicione esta linha para alinhar  os itens ao topo*/
+    opacity: 0;
+    /*adicione esta linha para esconder os itens enicialmente*/
+    transition: opacity 0.3s ease-in-out; 
+    /*adicione esta linha para criar uma transição suave*/
+
+}
+
+.carrossel li img{
+    margin: auto;
+    width: 2000px;
+    max-width: 100%;
+    min-height: 100%;
+    display: block;
+    
+}
+
+.carrossel li.active{
+    opacity: 1;
+    /*adicione esta linha para mostrar o item ativo*/
+}
